@@ -1,6 +1,6 @@
 {
   "name": "octokit-downloader",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Little utility to easily download a GitHub repository by owner/name/branch and unzip it in a location of your choosing",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,6 +15,7 @@
     "check": "yarn lint && yarn test && yarn build",
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
+    "demo": "ts-node ./index.ts",
     "npm:publish": "npm publish --access public"
   },
   "devDependencies": {
@@ -26,6 +27,7 @@
     "chai": "^4.3.4",
     "jest": "^27.4.5",
     "ts-jest": "^27.1.1",
+    "ts-node": "^10.4.0",
     "tslint": "^6.1.3",
     "typescript": "^4.5.4"
   },

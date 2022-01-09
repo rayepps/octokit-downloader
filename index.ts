@@ -35,7 +35,7 @@ const download = async ({
   if (!unzip) {
     return
   }
-  const destDir = destPath.replace(/\/.+?\.zip$/, '')
+  const destDir = destPath.replace(/\/[a-zA-Z0-9_\-]+?\.zip$/, '')
   const destFile = destPath.match(/^.+\/(.+?)\.zip$/)[1]
   await cmd(`unzip ${destFile}.zip`, {
     cwd: destDir,
